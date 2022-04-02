@@ -1,5 +1,6 @@
 import { css } from '@emotion/css'
 import { NextPage } from 'next'
+import Head from 'next/head'
 import { Contacts } from '../Contacts/Contacts'
 import { Header } from '../homePage/Header'
 
@@ -19,6 +20,14 @@ const Layout: NextPage = ({ children }: any) => {
         }
       `}
     >
+      <Head>
+        <title>Педикюр у Виктории</title>
+        <link rel='icon' href='#!' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap'
+          rel='stylesheet'
+        />
+      </Head>
       <Header />
       {children}
       <Contacts />
